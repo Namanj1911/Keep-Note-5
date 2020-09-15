@@ -52,7 +52,6 @@ services:
     ports:
       - 8080:8080
 
-
   mongoDatabase:
     image: mongo:3.2-jessie
     ports:
@@ -66,6 +65,6 @@ services:
     network_mode: host
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MUSQL_USER: approot
-      MYSQL_PASSWORD: apppass
-      MYSQL_DATABASE: keepnote
+      MUSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: userDb
